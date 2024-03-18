@@ -76,6 +76,4 @@ public class UserInfo {
     public void setBloodType(String bloodType) {
         this.bloodType = bloodType;
     }
-
-    // Additional methods as needed
 }
