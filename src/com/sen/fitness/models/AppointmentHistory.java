@@ -12,8 +12,6 @@ public class AppointmentHistory {
     private String userName;
     private int appointmentId;
 
-    // Constructors, getters, and setters
-
     public AppointmentHistory(int userId, String userName, int procedureId, String procedureName, Timestamp appointmentTime, boolean appointmentStatus, int appointmentId) {
         this.userId = userId;
         this.procedureId = procedureId;
