@@ -1,4 +1,4 @@
-package com.sen.fitness.center;
+package com.sen.fitness.local;
 
 import com.sen.fitness.data.Database;
 

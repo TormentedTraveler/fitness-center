@@ -1,15 +1,13 @@
-package com.sen.fitness.center;
+package com.sen.fitness.local;
 
 import com.sen.fitness.data.Database;
 import com.sen.fitness.models.AppointmentHistory;
 import com.sen.fitness.models.Procedure;
 import com.sen.fitness.models.UserInfo;
 
-import java.sql.Time;
 import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class Assistant extends Person {
