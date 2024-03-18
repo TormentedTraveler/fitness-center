@@ -7,7 +7,7 @@ import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Manager implements Human{
+public class Manager extends Person{
     private Database data;
     private boolean isUserLoggedIn = false;
 
@@ -123,13 +123,13 @@ public class Manager implements Human{
         System.out.println("Enter procedure name");
         String procedureName = sc.nextLine();
         boolean procedureUpdatedSuccessfully = false;
-        if (operationNumber == 0) {
+        if (operationNumber == 1) {
             System.out.println("Enter new procedure name");
             String newProcedureName = sc.nextLine();
 
             procedureUpdatedSuccessfully = this.data.editProcedureNameOrTime(procedureName, newProcedureName);
 
-        }else if (operationNumber == 1) {
+        }else if (operationNumber == 2) {
             System.out.println("Enter new procedure time");
             String newProcedureTime = sc.nextLine();
             Time convertedNewProcedureTime = Time.valueOf(newProcedureTime);

@@ -7,7 +7,7 @@ import com.sen.fitness.models.UserInfo;
 
 import java.util.ArrayList;
 
-public class Client implements Human {
+public class Client extends Person {
     private Database data;
     private boolean isUserLoggedIn = false;
     private int clientId;
@@ -21,9 +21,11 @@ public class Client implements Human {
             isUserLoggedIn = true;
             this.clientId = clientId;
             System.out.println("Login succeeded");
+            System.out.println();
             return true;
         }
         System.out.println("Login failed");
+        System.out.println();
         return false;
     }
 
@@ -58,6 +60,7 @@ public class Client implements Human {
     }
 
     public void showVisitsHistory() {
+        System.out.println(this.clientId);
         ArrayList<AppointmentHistory> visits = this.data.getVisitsHistory(this.clientId);
 
         if (visits.isEmpty()) {

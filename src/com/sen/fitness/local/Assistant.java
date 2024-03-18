@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Assistant implements Human {
+public class Assistant extends Person {
     private Database data;
     private boolean isUserLoggedIn = false;
 
