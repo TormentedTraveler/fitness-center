@@ -9,8 +9,6 @@ public class Procedure {
     private int procedureCost;
     private Time procedureTime;
 
-    // Constructors, getters, and setters
-
     public Procedure(int id, String procedureName, int procedureCost, Time procedureTime) {
         this.id = id;
         this.procedureName = procedureName;
